@@ -1,0 +1,40 @@
+body {
+    
+        font-family: 'Montserrat', sans-serif; 
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    color: #000000;
+  }
+  
+  footer {
+    background-color: #040113;
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  .navbar {
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .lead {
+      font-size: 1rem;
+    }
+  }
+  

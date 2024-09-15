@@ -1,0 +1,82 @@
+
+.projs-section{
+    background-color: #f9f9f9;
+        background: url('../../public/images/pic1.jpg') no-repeat center center/cover;
+     
+        position: relative;
+        z-index: 1;
+}
+.projs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(238, 238, 238, 0.719); /* Dark overlay with 60% opacity */
+    z-index: -1; /* Ensures the overlay is behind the content */
+  }
+.projects-title {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: bold; /* Bold font weight */
+    color: #0f263f; /* Primary color (you can adjust this) */
+    margin-bottom: 1rem; /* Space between title and subtitle */
+    letter-spacing: 1px; /* Add spacing between letters */
+    text-transform: uppercase; /* Make the text uppercase */
+    position: relative;
+  }
+  
+  .projects-title::after {
+    content: '';
+    display: block;
+    width: 100px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #0f263f; /* Underline color */
+    margin: 0px auto 0 auto; /* Center the underline */
+    border-radius: 2px; /* Rounded edges for the line */
+  }
+  
+  .projects-subtitle {
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #050d14; /* Subtle gray color */
+    margin-bottom: 2rem; /* Space between subtitle and content */
+  }
+.project-card {
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+  }
+  
+  .btn-primary {
+    background-color: #0e1a27;
+    border: none;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  .lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-img-top {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+  

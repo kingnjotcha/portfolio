@@ -1,0 +1,49 @@
+.experience-section {
+    position: relative;
+    background: url('../../public/images/pic1.jpg') no-repeat center center/cover; /* Add your image path here */
+    color: #6d5b5b; /* Text color */
+    z-index: 1;
+    padding: 60px 0;
+  }
+  
+  .experience-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(2, 6, 29, 0.856); /* Dark overlay with 60% opacity */
+    z-index: -1; /* Ensures the overlay is behind the content */
+  }
+  
+  .experience-section h2 {
+    color: #d4840c; 
+    font-size: 2.5rem;
+    padding: 1rem;
+    
+  }
+  
+  .experience-section h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+     
+  }
+  
+  .experience-section p {
+    color: #ffffff;
+    margin-left: 2rem;
+    
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  
+  @media (max-width: 768px) {
+    .experience-section h4 {
+      font-size: 1.25rem;
+    }
+  }
+  

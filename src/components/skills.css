@@ -1,0 +1,129 @@
+/* Title styling */
+.skills-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .skills-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+  
+  /* Skill category title */
+  .skill-category-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-icon {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 1.5rem;
+  }
+  
+  /* Skill list styling */
+  .skill-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skill-item {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-out;
+  }
+  
+  .skill-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 1.5rem;
+  }
+  
+  /* Animation */
+  .skill-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Hover effect on skill categories */
+  .skill-category:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-category:hover .skill-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Avatar effect */
+  .skill-category-avatar {
+    display: none; /* Hidden by default */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    margin-right: 10px;
+    transition: transform 0.5s ease; /* Add spin animation */
+  }
+  
+  /* Show and spin the avatar on hover */
+  .skill-category:hover .skill-category-avatar {
+    display: inline-block;
+    transform: rotate(360deg); /* Spin animation */
+  }
+  
+  .skill-category-avatar.spin {
+    animation: spin 1s infinite linear; /* Continuous spinning on hover */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .skill-category {
+      text-align: center;
+    }
+  
+    .skill-category-title {
+      font-size: 1.25rem;
+    }
+  
+    .category-icon {
+      font-size: 1.25rem;
+    }
+  
+    .skill-item {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Keyframes for the spin animation */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

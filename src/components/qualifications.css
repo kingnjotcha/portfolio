@@ -1,0 +1,56 @@
+.qualifications-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    
+        background: url('../../public/images/pic1.jpg') no-repeat center center/cover;
+        padding: 60px 0;
+        position: relative;
+        z-index: 1;
+  }
+  .qualifications-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.788); /* Dark overlay with 60% opacity */
+    z-index: -1; /* Ensures the overlay is behind the content */
+  }
+  .certificates{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #050a29;
+  }
+  
+  .qualifications-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: rgb(11, 3, 31);
+  }
+  
+  .qualifications-section h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #050a29;
+  }
+  
+  .qualifications-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    margin-left: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .qualifications-section h4 {
+      font-size: 1.25rem;
+    }
+  
+    .qualifications-section p {
+      font-size: 1rem;
+    }
+  }
+  
