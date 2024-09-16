@@ -154,5 +154,15 @@
     .contact-form {
       padding: 20px;
     }
+    .contact-icon {
+      margin-right: 2px;
+      color: green;
+      font-size: 1rem;
+    }
+    .email-icon {
+      margin-right: 8px;
+      color: #007bff;
+      font-size: 1.5rem;
+    }
   }
   

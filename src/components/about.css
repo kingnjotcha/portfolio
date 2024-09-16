@@ -1,0 +1,117 @@
+/* About Section General Styles */
+#about {
+  background-color: #e1e0e4;
+  padding: 3rem 0; /* Add padding to create more spacing */
+}
+
+/* About Me Heading Styles */
+.about-heading {
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  color: #0f263f;
+}
+
+.about-heading::after {
+  content: '';
+  display: block;
+  width: 100px; /* Adjust width as needed */
+  height: 4px; /* Adjust height as needed */
+  background-color: #0f263f; /* Adjust color as needed */
+  margin: 0 auto;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -10px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+}
+
+/* Carousel Item Styles */
+.carousel-item {
+  height: 400px; /* Ensure all carousel items are the same height */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Background Image Overlay */
+.carousel-item .d-block {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-blend-mode: darken;
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* White text for captions */
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to enhance text readability */
+  padding: 20px;
+}
+
+/* Title Animation and Styling */
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  
+}
+
+/* Text Animation and Styling */
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Smooth transitions for background images */
+.carousel-item .d-block {
+  transition: background 0.5s ease-in-out;
+  border-radius: 4rem;
+  box-shadow: rgb(0, 0, 0);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-item {
+    height: 300px; /* Reduce height for mobile screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-item {
+    height: 250px; /* Further reduce height for smaller screens */
+  }
+}

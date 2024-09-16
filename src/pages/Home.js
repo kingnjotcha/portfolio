@@ -10,8 +10,8 @@ const Home = () => {
     <>
       <section className="home-intro">
         <div className="container">
+          <p className="lead text-center home-subtitle">  Hi! I'm Isaac king Banda</p>
           <h1 className="text-center text-primary home-title">Welcome to My Portfolio</h1>
-          <p className="lead text-center home-subtitle"> I'm Isaac king Banda</p>
         </div>
       </section>
       <About />
