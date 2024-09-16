@@ -22,10 +22,12 @@ body {
   
   .nav-link {
     font-size: 1.1rem;
+    color: #fff;
+    text-decoration: #fff;
   }
   
   .navbar {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   
   @media (max-width: 768px) {

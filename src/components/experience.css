@@ -1,6 +1,6 @@
 .experience-section {
     position: relative;
-    background: url('../../public/images/pic1.jpg') no-repeat center center/cover; /* Add your image path here */
+    background: url('../../public/images/FADA/fada1.jpg') no-repeat center center/cover; /* Add your image path here */
     color: #6d5b5b; /* Text color */
     z-index: 1;
     padding: 60px 0;
@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(2, 6, 29, 0.856); /* Dark overlay with 60% opacity */
+    background-color: rgba(2, 6, 29, 0.747); /* Dark overlay with 60% opacity */
     z-index: -1; /* Ensures the overlay is behind the content */
   }
   

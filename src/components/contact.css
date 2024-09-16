@@ -1,0 +1,158 @@
+/* Contact Section Styling */
+#contact {
+    position: relative;
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .contact-section {
+    background: url('../../public/images/network.webp') center center / cover no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.856);
+    z-index: -1;
+  }
+  
+  /* Title */
+  #contact h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards;
+  }
+  
+  #contact h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  .separator{
+    motion-rotation: 60deg;
+    margin:1rem;
+  }
+  /* Form Styling */
+  .contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInUp 0.8s forwards;
+  }
+  
+  .icon-input {
+    position: relative;
+  }
+  
+  .icon-container {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+  }
+  
+  .input-icon {
+    font-size: 1.2rem;
+    
+  }
+  
+  .form-control {
+    padding-right: 50px; /* Adjust padding to fit icon inside */
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+  
+  #contact .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  }
+  
+  #contact .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .contact-form.submitted {
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Contact Info */
+  #contact .text-center p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  #contact .text-center a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #contact .text-center a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-icon {
+    margin-right: 8px;
+    color: green;
+    font-size: 1.5rem;
+  }
+  .email-icon {
+    margin-right: 8px;
+    color: #007bff;
+    font-size: 1.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #contact h2 {
+      font-size: 2rem;
+    }
+    
+    .contact-form {
+      padding: 20px;
+    }
+  }
+  

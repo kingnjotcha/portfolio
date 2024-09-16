@@ -1,129 +1,130 @@
+/* Container with background image and overlay */
+.skills-container {
+    position: relative;
+    background-image: url('../../public/images/FADA/fada3.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 50px;
+    color: white;
+    z-index: 1;
+    justify-content: center;
+}
+
+/* Overlay for a semi-transparent effect */
+.skills-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.842); /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
 /* Title styling */
 .skills-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #007bff;
+    color: #fff; /* White color for title */
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     position: relative;
-  }
-  
-  .skills-title::after {
+    text-align: left; /* Align the title to the left */
+    margin-left: 20px; /* Push the title slightly right */
+}
+
+.skills-title::after {
     content: '';
     display: block;
     width: 100px;
     height: 4px;
-    background-color: #007bff;
+    background-color: #fff;
     margin: 10px auto;
     border-radius: 2px;
-  }
-  
-  /* Skill category title */
-  .skill-category-title {
+}
+
+/* Skill category title */
+.skill-category-title {
     font-size: 1.5rem;
-    color: #333;
+    color: #fff; /* White color for category title */
     margin-bottom: 1rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     transition: transform 0.3s ease;
-  }
-  
-  .category-icon {
+    margin-left: 20px; /* Push skill titles to the right */
+}
+
+.category-icon {
     margin-right: 10px;
     color: #007bff;
     font-size: 1.5rem;
-  }
-  
-  /* Skill list styling */
-  .skill-list {
+}
+
+/* Skill list styling */
+.skill-list {
     list-style: none;
     padding-left: 0;
-  }
-  
-  .skill-item {
+    margin-left: 40px; /* Push skill list to the right */
+}
+
+.skill-item {
     font-size: 1.1rem;
-    color: #555;
+    color: #ddd; /* Lighter color for skills */
     margin-bottom: 0.5rem;
     position: relative;
     padding-left: 20px;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.5s ease-out;
-  }
-  
-  .skill-item::before {
+}
+
+.skill-item::before {
     content: "•";
     position: absolute;
     left: 0;
     color: #007bff;
     font-size: 1.5rem;
-  }
-  
-  /* Animation */
-  .skill-item.animate {
+}
+
+/* Animation */
+.skill-item.animate {
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  /* Hover effect on skill categories */
-  .skill-category:hover {
+}
+
+/* Hover effect on skill categories */
+.skill-category:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
-  }
-  
-  .skill-category:hover .skill-item {
+}
+
+.skill-category:hover .skill-item {
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  /* Avatar effect */
-  .skill-category-avatar {
-    display: none; /* Hidden by default */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #007bff;
-    margin-right: 10px;
-    transition: transform 0.5s ease; /* Add spin animation */
-  }
-  
-  /* Show and spin the avatar on hover */
-  .skill-category:hover .skill-category-avatar {
-    display: inline-block;
-    transform: rotate(360deg); /* Spin animation */
-  }
-  
-  .skill-category-avatar.spin {
-    animation: spin 1s infinite linear; /* Continuous spinning on hover */
-  }
-  
-  /* Media Queries for responsiveness */
-  @media (max-width: 768px) {
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
     .skill-category {
-      text-align: center;
+        text-align: center;
+        margin-left: 0;
     }
-  
+
     .skill-category-title {
-      font-size: 1.25rem;
+        font-size: 1.25rem;
     }
-  
+
     .category-icon {
-      font-size: 1.25rem;
+        font-size: 1.25rem;
     }
-  
+
     .skill-item {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  }
-  
-  /* Keyframes for the spin animation */
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
+
+    .skills-title {
+        margin-left: 0; /* Reset for smaller screens */
     }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+}

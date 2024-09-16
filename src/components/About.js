@@ -9,7 +9,7 @@ const About = () => {
           <Col md={6} className="mx-auto text-center">
             <h2>About Me</h2>
             <p className="lead">
-              Hi! I'm Isaac Banda, a Software Developer, Photographer, and Graphic Designer from Malawi.
+               I'm a Software Developer, Photographer, and Graphic Designer from Malawi.
             </p>
           </Col>
         </Row>

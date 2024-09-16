@@ -1,0 +1,51 @@
+/* NavigationBar.css */
+
+.navbar {
+    border-bottom: 2px solid #007bff; /* Adds a border at the bottom of the navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff !important; /* Ensures brand text color is white */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #fff !important; /* Ensures nav link color is white */
+    padding: 0.75rem 1.25rem; /* Adds padding for better spacing */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff !important; /* Changes text color on hover */
+    background-color: rgba(255, 255, 255, 0.123); /* Adds a subtle background color on hover */
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #007bff !important; /* Changes text color for the active link */
+    /* background-color: rgba(240, 240, 240, 0.2); Adds a background color for the active link */
+    font-weight: bold;
+  }
+  
+  .navbar-toggler {
+    border-color: #007bff; /* Changes the border color of the toggler button */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-linecap='round' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0; /* Reduces padding on mobile devices */
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }

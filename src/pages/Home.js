@@ -3,19 +3,21 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import Experience from '../components/Experience';
 import Qualifications from '../components/Qualifications';
+import './home.css'; // Ensure you create and include this CSS file
 
 const Home = () => {
   return (
-    
     <>
-    <div className="container">
-    <h1 className="text-center text-primary">Welcome to My Portfolio</h1>
-    <p className="lead text-center">This is the home page.</p>
-  </div>
+      <section className="home-intro">
+        <div className="container">
+          <h1 className="text-center text-primary home-title">Welcome to My Portfolio</h1>
+          <p className="lead text-center home-subtitle"> I'm Isaac king Banda</p>
+        </div>
+      </section>
       <About />
       <Skills />
       <Experience />
-      <Qualifications/>
+      <Qualifications />
     </>
   );
 }

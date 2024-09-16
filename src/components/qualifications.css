@@ -2,7 +2,7 @@
     background-color: #f9f9f9;
     padding: 60px 0;
     
-        background: url('../../public/images/pic1.jpg') no-repeat center center/cover;
+        background: url('../../public/images/FADA/fada.jpg') no-repeat center center/cover;
         padding: 60px 0;
         position: relative;
         z-index: 1;
@@ -14,8 +14,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.788); /* Dark overlay with 60% opacity */
-    z-index: -1; /* Ensures the overlay is behind the content */
+    background-color: rgba(193, 221, 221, 0.74); /* Dark overlay with 60% opacity */
+    z-index: -2; /* Ensures the overlay is behind the content */
   }
   .certificates{
     margin-bottom: 2rem;
